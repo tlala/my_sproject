@@ -11,6 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.facebook.AccessToken;
+import com.firebase.client.Firebase;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -27,6 +33,10 @@ public class CreateSurveyFragment extends Fragment {
     EditText ans3;
     EditText ans4;
 
+    //private DatabaseReference mDatabase;
+    private Firebase mRootRef;
+    private Firebase messageRef;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -37,14 +47,52 @@ public class CreateSurveyFragment extends Fragment {
         ans3 = (EditText)view.findViewById(R.id.ans3ET);
         ans4 = (EditText)view.findViewById(R.id.ans4ET);
         Button btn = (Button)view.findViewById(R.id.sendSurveybtn);
+
+        /*
+        debugLoger.log("0");
+        mRootRef = new Firebase("https://survey-project-8d072.firebaseio.com/");
+        debugLoger.log("1");
+        messageRef = mRootRef.child("ksdf1");
+        debugLoger.log("2");
+
+       // mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        ValueEventListener postListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // Get Post object and use the values to update the UI
+                String dat = dataSnapshot.getValue(String.class);
+                debugLoger.log("data is : " + dat);
+                //Post post = dataSnapshot.getValue(Post.class);
+                // ...
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Getting Post failed, log a message
+                //Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
+                // ...
+            }
+        };
+        debugLoger.log("3");
+        debugLoger.log("cheking");
+       messageRef.addListenerForSingleValueEvent((com.firebase.client.ValueEventListener) postListener);
+        debugLoger.log("4");
+*/
+
+        // mDatabase.addListenerForSingleValueEvent(postListener);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SocketCommunication.sendNewSurvey(AccessToken.getCurrentAccessToken(),getSurvey());
+               // mDatabase.child("users").child("123").child("username").setValue("tal ben yosef");
+                //SocketCommunication.sendNewSurvey(AccessToken.getCurrentAccessToken(),getSurvey());
             }
         });
         return view;
     }
+
+
 
     public List<String> getSurvey(){
         List<String> survey = new ArrayList<String>();

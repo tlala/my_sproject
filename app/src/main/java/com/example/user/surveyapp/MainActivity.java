@@ -101,10 +101,11 @@ public class MainActivity extends AppCompatActivity {
 
         
                 Intent intent;
-        if(Profile.getCurrentProfile() != null)
-            intent = new Intent(this, MainAppActivity.class);
-        else
-            intent = new Intent(this, LoginActivity.class);
+        //if(Profile.getCurrentProfile() != null)
+        //    intent = new Intent(this, MainAppActivity.class);
+        //else
+        //    intent = new Intent(this, LoginActivity.class);
+        intent = new Intent(this, LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish(); // call this to finish the current activity
