@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //                if (isNewUser) {
 //                    debugLoger.log("new user");
-//                    Intent myIntent = new Intent(loginButton.getContext(), RegisterActivity.class);
+//                    Intent myIntent = new Intent(loginButton.getContext(), RegisterWithFacebookActivity.class);
 //                    startActivityForResult(myIntent, 0);
 //                } else {
 //                    debugLoger.log("member");

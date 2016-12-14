@@ -12,12 +12,12 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\messenger_bubble_large_white.png",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\surveyapp\\facebook\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\com_facebook_close.png",
